@@ -1,0 +1,28 @@
+<ons-page id="pageCreateGroup">
+	
+	<ons-toolbar>
+		<div class="left">
+			<ons-back-button></ons-back-button>
+		</div>
+		<div class="center">
+			<ons-input id="inputSearchFriends"></ons-input>
+		</div>
+		<div class="title-loading progress-bar progress-bar--indeterminate">
+			<div class="progress-bar__primary"></div>
+			<div class="progress-bar__secondary"></div>
+		</div>
+	</ons-toolbar>
+	
+	<div class="input-fields">
+		<p>
+			<ons-input id="inputGroupName" float></ons-input>
+		</p>
+	</div>
+	
+	<ons-list id="listFriendsToAdd"></ons-list>
+	
+	<ons-bottom-toolbar> 
+		<ons-button id="btnTitleCreateGroup" class="button--outline" modifier="quiet" disabled="true" disable-auto-styling></ons-button>
+	</ons-bottom-toolbar>
+	
+</ons-page>

@@ -1,0 +1,84 @@
+<ons-page id="pageFriends" data-initialized="0">
+	
+	<ons-toolbar>
+		<div class="left">
+			<ons-icon id="searchIconOpen" icon="ion-ios-search"></ons-icon>
+		</div>
+		<div class="center">
+			<ons-input id="inputSearchFriends" class="search-field-input"></ons-input>
+		</div>
+		<div class="right">
+			<ons-toolbar-button id="btnTopMenu">
+				<i class="app-icon btn-icon icon-plus">
+					<span class="icon-wrapper"></span>
+				</i>
+				<i class="app-icon btn-icon icon-minus" style="display: none;">
+					<span class="icon-wrapper"></span>
+				</i>
+			</ons-toolbar-button>
+			<ons-toolbar-button id="btnTopClearSearch" style="display: none;">
+				<i class="app-icon icon-clear">
+					<span class="icon-wrapper"></span>
+				</i>
+			</ons-toolbar-button>
+		</div>
+		<div style="display: none;" class="title-loading progress-bar progress-bar--indeterminate">
+			<div class="progress-bar__primary"></div>
+			<div class="progress-bar__secondary"></div>
+		</div>
+	</ons-toolbar>
+	
+	<div class="app-wrapper">
+		
+		<!-- Top Menu -->
+		<div id="topMenuFriends" style="display: none;">
+			<ons-list-item id="liAddFriend" modifier="nodivider" tappable>
+				<div class="left">
+					<i class="app-icon icon-add-friend">
+						<span class="icon-wrapper"></span>
+					</i>
+				</div>
+				<div class="label center"></div>
+			</ons-list-item>
+			<ons-list-item id="liCreateGroup" modifier="nodivider" tappable>
+				<div class="left">
+					<i class="app-icon icon-create-group">
+						<span class="icon-wrapper"></span>
+					</i>
+				</div>
+				<div class="label center"></div>
+			</ons-list-item>
+		</div>
+
+		<!-- Friend Requests -->
+		<div class="friend-requests-field">
+			<ons-list-item id="headerFriendRequests" class="friends-label" style="display: none;" 
+						   modifier="longdivider" data-expanded="0" tappable>
+				<div class="left notification-wrapper">
+					<i class="app-icon icon-add-friend">
+						<span class="icon-wrapper"></span>
+					</i>
+				</div>
+				<div class="center">
+					<span class="notification-wrapper">
+						<span class="label list-item__subtitle"></span>
+						<span class="notification"></span>
+					</span>
+				</div>
+				<div class="right">
+					<ons-icon class="expand-icon" icon="ion-chevron-right"></ons-icon>
+				</div>
+			</ons-list-item>
+			<ons-list id="listFriendRequests" style="display: none;"></ons-list>
+		</div>
+			
+		<!-- Friends -->
+		<ons-list-header id="labelFriends" class="friends-label" style="display: none;"></ons-list-header>
+		<ons-list id="listFriends"></ons-list>
+		
+		<!-- Groups -->
+		<ons-list-header id="labelGroups" class="friends-label" style="display: none;"></ons-list-header>
+		<ons-list id="listGroups"></ons-list>
+	</div>
+	
+</ons-page>

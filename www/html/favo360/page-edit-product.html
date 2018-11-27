@@ -1,0 +1,189 @@
+<ons-page id="pageFavoSiteEditProduct" data-item-id="" data-selected-categories="[]" data-selected-filters="[]">
+	
+	<ons-toolbar>
+		<div class="left">
+			<ons-back-button></ons-back-button>
+		</div>
+		<div class="title-label center"></div>
+		<div class="title-loading progress-bar progress-bar--indeterminate">
+			<div class="progress-bar__primary"></div>
+			<div class="progress-bar__secondary"></div>
+		</div>
+	</ons-toolbar>
+	
+	<div class="list-common-items">
+		
+		<div>
+			<img id="imgProduct">
+		</div>
+		
+		<!-- Middle Tab Bar -->
+		<div class="button-bar">
+			<div id="tabProductInfo" class="button-bar__item current">
+				<input id="btnProductInfo" type="radio" checked>
+				<div class="button-bar__button">
+					<ons-icon icon="ion-compose"></ons-icon>
+					<span class="warning-product-info notification"></span>
+					<div class="label"></div>
+				</div>
+			</div>
+			<div id="tabProductCategories" class="button-bar__item">
+				<input id="btnProductCategories" type="radio">
+				<div class="button-bar__button">
+					<ons-icon icon="ion-ios-list-outline"></ons-icon>
+					<span class="warning-product-info notification"></span>
+					<div class="label"></div>
+				</div>
+			</div>
+			<div id="tabProductFilters" class="button-bar__item">
+				<input id="btnProductFilters" type="radio">
+				<div class="button-bar__button">
+					<ons-icon icon="ion-levels"></ons-icon>
+					<span class="warning-product-info notification"></span>
+					<div class="label"></div>
+				</div>
+			</div>
+		</div>
+		
+		<!----------------------- Product Information Tabs ------------------------>
+		<!--*************** Product Info ********************-->
+		<div id="productTabInfo" class="product-tab">
+			
+			<div class="steps">
+				<h4 id="stepOneTitle">
+					<strong>1</strong>
+					<span></span>
+				</h4>
+				<div class="steps-wrapper">
+					<p>
+						<span id="warnProductCode" class="warning-product-input notification"></span>
+						<ons-input id="inputProductCode"></ons-input>
+					</p>
+					<p>
+						<ons-list-item tappable>
+							<label class="left">
+								<ons-input id="inputSKUInsteadOfName" type="checkbox" input-id="idSKUInsteadOfName"></ons-input>
+							</label>
+							<label id="labelSKUInsteadOfName" for="idSKUInsteadOfName" class="center"></label>
+						</ons-list-item>
+					</p>
+					<p>
+						<ons-input id="inputProductPrice" type="number"></ons-input>
+					</p>
+					<p>
+						<ons-list-item tappable>
+							<label class="left">
+								<ons-input id="inputPriceNegotiate" type="checkbox" input-id="idPriceNegotiate"></ons-input>
+							</label>
+							<label id="labelPriceNegotiate" for="idPriceNegotiate" class="center"></label>
+						</ons-list-item>
+					</p>
+					<p>
+						<ons-input id="inputProductCurrency" readonly="true"></ons-input>
+					</p>
+					<p>
+						<span id="warnProductMeasure" class="warning-product-input notification"></span>
+						<ons-input id="inputProductMeasure" placeholder="Measure" data-measure-id="" readonly="true"></ons-input>
+					</p>
+				</div>
+			</div>
+			
+			<div class="steps">
+				<h4 id="stepTwoTitle">
+					<strong>2</strong>
+					<span></span>
+				</h4>
+				<div class="steps-wrapper">
+					<p> <span id="warnProductName" class="warning-product-input notification"></span>
+						<ons-input id="inputProductName"></ons-input>
+					</p>
+					<p>
+						<ons-list-item tappable>
+							<label class="left">
+								<ons-input id="inputClearance" type="checkbox" input-id="idClearance"></ons-input>
+							</label>
+							<label id="labelClearance" for="idClearance" class="center"></label>
+						</ons-list-item>
+						
+						<ons-list-item tappable>
+							<label class="left">
+								<ons-input id="inputNewArrivals" type="checkbox" input-id="idNewArrivals"></ons-input>
+							</label>
+							<label id="labelNewArrivals" for="idNewArrivals" class="center"></label>
+						</ons-list-item>
+						
+						<ons-list-item tappable>
+							<label class="left">
+								<ons-input id="inputFeatured" type="checkbox" input-id="idFeatured"></ons-input>
+							</label>
+							<label id="labelFeatured" for="idFeatured" class="center"></label>
+						</ons-list-item>
+					</p>
+					<p>
+						<ons-input id="inputProductWeight" type="number"></ons-input>
+					</p>
+					<p>
+						<ons-list-item modifier="nodivider" tappable>
+							<label class="left">
+								<ons-input class="radio" type="radio" name="weight" input-id="radioProductWeightTypeKg"></ons-input>
+							</label>
+							<label for="radioProductWeightTypeKg" class="center">Kg.</label>
+						</ons-list-item>
+						<ons-list-item modifier="nodivider" tappable>
+							<label class="left">
+								<ons-input class="radio" type="radio" name="weight" input-id="radioProductWeightTypeGr"></ons-input>
+							</label>
+							<label for="radioProductWeightTypeGr" class="center">gr.</label>
+						</ons-list-item>
+					</p>
+					<p>
+						<ons-input id="inputProductVolume" type="number"></ons-input>
+					</p>
+					<p>
+						<ons-input id="inputProductWidth" type="number"></ons-input>
+					</p>
+					<p>
+						<ons-input id="inputProductHeight" type="number"></ons-input>
+					</p>
+					<p>
+						<ons-input id="inputProductLength" type="number"></ons-input>
+					</p>
+					<div id="infoDescription">
+						<p id="labelProductDescription"></p>
+						<div id="inputProductText" class="quill-editor"></div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="steps">
+				<h4 id="stepThreeTitle">
+					<strong>3</strong>
+					<span></span>
+				</h4>
+				<div id="infoPrivate" class="steps-wrapper">
+					<p>
+						<ons-input id="inputProductQuantity" type="number"></ons-input>
+					</p>
+					<p>
+						<textarea id="inputProductComment" rows="4"></textarea>
+					</p>
+				</div>
+			</div>
+		</div>
+		
+		<!-- Product Categories -->
+		<div id="productTabCategories" class="product-tab" style="display: none;">
+			<ons-list id="listProductCategories"></ons-list>
+		</div>
+		
+		<!-- Product Filters -->
+		<div id="productTabFilters" class="product-tab" style="display: none;">
+			<p id="warnNoCategories"></p>
+			<ons-list id="listProductFilters"></ons-list>
+		</div>
+	</div>
+	
+	<ons-bottom-toolbar>
+		<ons-button id="btnProductUpdateInfo" class="button--outline" modifier="quiet" disable-auto-styling></ons-button>
+	</ons-bottom-toolbar>
+</ons-page>

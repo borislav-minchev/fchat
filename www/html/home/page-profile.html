@@ -1,0 +1,49 @@
+<ons-page id="pageProfile">
+	
+	<ons-toolbar>
+		<div class="left">
+			<ons-back-button></ons-back-button>
+		</div>
+		<div class="title-label center"></div>
+		<div class="right">
+			<ons-toolbar-button id="btnEditUserInfo">
+				<ons-icon icon="ion-clipboard"></ons-icon>  
+			</ons-toolbar-button>
+		</div>
+		<div style="display: none;" class="title-loading progress-bar progress-bar--indeterminate">
+			<div class="progress-bar__primary"></div>
+			<div class="progress-bar__secondary"></div>
+		</div>
+	</ons-toolbar>
+	
+	<p class="profile-avatar">
+		<img id="profileAvatar" src="./res/img/avatar-placeholder.png">
+		<ons-icon class="edit-icon" icon="ion-edit" size="30px" style="display: none;"></ons-icon>
+	</p>
+	
+	<div class="profile-info">
+		<p>
+			<span id="labelUserFullName"></span>
+			<span id="userFullName"></span>
+		</p>
+		<p>
+			<span id="labelUserCountry"></span>
+			<span id="userCountry" data-country-code=""></span>
+		</p>
+		
+		<p>
+			<span id="labelUserCountryPhoneCode"></span>
+			<span id="userCountryPhoneCode"></span>
+		</p>
+		<p>
+			<span id="labelUserPhone"></span>
+			<span id="userPhone"></span>
+		</p>
+
+	</div>
+	
+	<ons-bottom-toolbar> 
+		<ons-button id="btnProfileLogout" class="button--outline" modifier="quiet" disable-auto-styling></ons-button>
+	</ons-bottom-toolbar>
+	
+</ons-page>

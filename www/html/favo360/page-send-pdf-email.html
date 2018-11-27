@@ -1,0 +1,38 @@
+<ons-page id="pageFavoSendPdfEmail" data-order-id="" data-order-num="" data-type="">
+	
+	<ons-toolbar>
+		<div class="left">
+			<ons-back-button></ons-back-button>
+		</div>
+		<div class="title-label center"></div>
+		<div class="title-loading progress-bar progress-bar--indeterminate">
+			<div class="progress-bar__primary"></div>
+			<div class="progress-bar__secondary"></div>
+		</div>
+	</ons-toolbar>
+
+	<div class="app-wrapper input-fields app-inner-space">
+		<p>
+			<ons-input id="inputEmailOrderNum" readonly="true" float></ons-input>
+		</p>
+		<p>
+			<ons-input id="inputEmailAddress" float></ons-input>
+		</p>
+		<p>
+			<div id="inputEmailText" class="quill-editor"></div>
+		</p>
+		<p>
+			<div id="attachmentItem" class="info-display">
+				<i class="app-icon icon-attachemnt">
+					<span class="icon-wrapper"></span>
+				</i>
+				<span class="label"></span>
+          </div>
+		</p>
+	</div>
+	
+	<ons-bottom-toolbar> 
+		<ons-button id="btnBottomSendEmail" class="button--outline" modifier="quiet" disable-auto-styling></ons-button>
+	</ons-bottom-toolbar>
+	
+</ons-page>

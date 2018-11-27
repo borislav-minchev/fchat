@@ -1,0 +1,208 @@
+<ons-page id="pageChat" data-chat-loaded="0" data-user-id="" data-con-id="">
+	
+	<!-- Splitter Menu -->
+	<ons-splitter>
+		
+		<!-- Side Menu with notifications -->
+		<ons-splitter-side id="sideMenu" side="right" width="220px" swipeable collapse>
+			<ons-page>
+				<ons-list-header id="noNotifHeader"></ons-list-header>
+				<!-- Notifications list -->
+				<ons-list id="sideNotifList"></ons-list>
+				<!-- Menu list -->
+				<ons-list>
+					
+					<ons-list-item id="sideUserProfile" class="chat-side-list-item group-divider" tappable>
+						<div class="left">
+							<img class="avatar">
+						</div>
+						<div class="label center"></div>
+					</ons-list-item>
+					
+					<ons-list class="chat-side-participants group-divider">
+						<!-- other friends profiles -->
+					</ons-list>
+					
+					<!-- view shop -->
+					<ons-list-item id="sideViewFriendShop" data-company-id="" style="display: none;">
+						<div class="left">
+							<i class="app-icon icon-store-link">
+								<span class="icon-wrapper"></span>
+							</i>
+						</div>
+						<div class="label center"></div>
+					</ons-list-item>
+					
+					<ons-list-item id="sideAddFriends" class="group-divider">
+						<div class="left">
+							<i class="app-icon btn-icon icon-plus">
+								<span class="icon-wrapper"></span>
+							</i>
+						</div>
+						<div class="label center"></div>
+					</ons-list-item>
+					
+					<ons-list-item id="sideLeaveGroup">
+						<div class="left">
+							<i class="app-icon btn-icon icon-plus">
+								<span class="icon-wrapper"></span>
+							</i>
+						</div>
+						<div class="label center"></div>
+					</ons-list-item>
+					
+					<ons-list-item id="sideDeleteChat">
+						<div class="left">
+							<i class="app-icon icon-delete">
+								<span class="icon-wrapper"></span>
+							</i>
+						</div>
+						<div class="label center"></div>
+					</ons-list-item>
+					
+				</ons-list>
+			</ons-page>
+		</ons-splitter-side>
+		
+		<!-- Chat Page -->
+		<ons-splitter-content>
+			
+			<ons-page id="subPageChat">
+				
+				<ons-toolbar id="titlebar">
+					<div class="left">
+						<ons-back-button></ons-back-button>
+					</div>
+					<div class="title-label center"></div>
+					<div class="right">
+						<ons-toolbar-button id="btnChatSideMenu" class="chat-notification">
+							<i class="app-icon icon-nav">
+								<span class="icon-wrapper"></span>
+								<span class="notification"></span>
+							</i>
+						</ons-toolbar-button>
+					</div>
+					<div id="loadingHistory" class="progress-bar progress-bar--indeterminate">
+						<div class="progress-bar__primary"></div>
+						<div class="progress-bar__secondary"></div>
+					</div>
+				</ons-toolbar>
+
+				<div class="chat-window">
+					<div id="chatWindow" class="item-content"></div>
+				</div>
+
+				<ons-fab id="btnScrollBottom" position="bottom right" style="display: none;">
+					<ons-icon icon="ion-ios-arrow-down"></ons-icon>
+				</ons-fab>
+				
+
+				<!-- Chat More Panel -->
+				<div id="morePanel" style="display: none;">
+					<ons-row>
+						
+						<ons-col id="morePanelColCamera" width="33%">
+							<ons-button id="btnMorePanelCamera" modifier="quiet">
+								<div class="btn-wrapper">
+									<i class="app-icon icon-camera">
+										<span class="icon-wrapper"></span>
+									</i>
+									<p class="label"></p>
+								</div>
+							</ons-button>
+						</ons-col>
+						
+						<ons-col id="morePanelColImages" width="33%">
+							<ons-button id="btnMorePanelImages" modifier="quiet">
+								<div class="btn-wrapper">
+									<i class="app-icon icon-images">
+										<span class="icon-wrapper"></span>
+									</i>
+									<p class="label"></p>
+								</div>
+							</ons-button>
+						</ons-col>
+						
+						<ons-col id="morePanelColFile" width="33%">
+							<ons-button id="btnMorePanelFile" modifier="quiet">
+								<div class="btn-wrapper">
+									<i class="app-icon icon-file">
+										<span class="icon-wrapper"></span>
+									</i>
+									<p class="label"></p>
+								</div>
+							</ons-button>
+							<input id="inputFileAttachment" type="file" style="display: none">
+						</ons-col>
+						
+					</ons-row>
+				</div>
+
+				<!-- Bottom Toolbar -->
+				<ons-bottom-toolbar id="botToolbar">
+
+					<!----------------------- Chat Row ------------------>
+					<ons-row id="rowChat">
+
+						<ons-col width="15%">
+							<ons-toolbar-button id="btnOpenRecording">
+								<i class="app-icon icon-voice">
+									<span class="icon-wrapper"></span>
+								</i>
+							</ons-toolbar-button>
+						</ons-col>
+
+						<ons-col width="70%">
+							<textarea id="inputMessage" rows="1"></textarea>
+						</ons-col>
+
+						<ons-col width="15%">
+							<ons-toolbar-button id="btnMore">
+								<i id="openPanelIcon" class="app-icon icon-plus">
+									<span class="icon-wrapper"></span>
+								</i>
+								<i id="closePanelIcon" class="app-icon icon-minus" style="display: none;">
+									<span class="icon-wrapper"></span>
+								</i>
+							</ons-toolbar-button>
+
+							<ons-toolbar-button id="btnSendMsg" style="display: none;">
+								<i class="app-icon icon-send">
+									<span class="icon-wrapper"></span>
+								</i>
+							</ons-toolbar-button>
+						</ons-col>
+
+					</ons-row>
+
+
+					<!----------------------- Voice Row ------------------>
+					<ons-row style="display: none;" id="rowVoice">
+
+						<ons-col width="20%">
+							<ons-toolbar-button id="btnOpenKeyboard">
+								<i class="app-icon icon-edit">
+									<span class="icon-wrapper"></span>
+								</i>
+							</ons-toolbar-button>
+						</ons-col>
+
+						<ons-col width="80%">
+							<ons-button id="btnRecordSound" class="rec-btn" data-sliding-mode="not-holded" 
+										modifier="large" disable-auto-styling>
+							</ons-button>
+							<audio id="audioRecFinish" src="././res/snd/rec-finish-sound.wav" style="display: none;"></audio>
+						</ons-col>
+
+					</ons-row>
+
+				</ons-bottom-toolbar>
+			</ons-page>
+		</ons-splitter-content>
+	</ons-splitter>
+
+	<audio id="audioMsgContainer" style="display: none;"></audio>
+	<div id="slideup-to-cancel" style="display: none;" class="sound-rec-img"></div>
+	<div id="release-to-cancel" style="display: none;" class="sound-rec-img"></div>
+	
+</ons-page>

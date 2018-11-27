@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <meta http-equiv="Content-Security-Policy"
+		  content="default-src * 'unsafe-inline' 'self' gap://ready; style-src 'self' 'unsafe-inline' http://*; img-src * data:">
+	<script src="cordova.js"></script>
+	
+	<!-- JQUery -->
+	<script src="libs/jquery.min.js"></script>
+	
+	<!-- Onsen UI -->
+	<script src="libs/onsenui.js"></script>
+    <link rel="stylesheet" href="css/onsenui.css">
+	<link rel="stylesheet" href="css/onsen-css-components.css">
+	
+	<!-- Tools JS -->
+	<script src="js/tools/my-tools.js"></script>
+	<script src="js/tools/appender.js"></script>
+	<script src="js/tools/my-storage.js"></script>
+	
+	<!-- Login JS -->
+	<script src="js/login/login-clicks.js"></script>
+	<script src="js/login/login.js"></script>
+	
+	<!-- Other FavoChat JS -->
+	<script src="js/my-constants.js"></script>
+	<script src="js/my-ajax.js"></script>
+	
+	<!-- Temporary Favo stuff because of caching-->
+	<script type="text/javascript">
+		document.write('<script src="https://www.favo360.com/_s/lib/favo360.js?rand='+Math.random()+'"><\/script><\/script><link rel="stylesheet" href="http://css.favochat.com/shared/_m.css?rand='+Math.random()+'"><\/script><link rel="stylesheet" href="http://css.favochat.com/shared/_c.css?rand='+Math.random()+'">');
+	</script> 
+	
+	<!-- RELEASE
+	<script src="js/favo360.js"></script>
+	<link rel="stylesheet" href="css/shared/_c.css">
+	<link rel="stylesheet" href="css/shared/_m.css"> -->
+</head>
+
+<body>
+	<ons-navigator id="loginNavigator" animation="slide"></ons-navigator>
+</body>
+
+</html>

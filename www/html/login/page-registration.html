@@ -1,0 +1,30 @@
+<ons-page id="pageRegistration">
+	
+	<ons-modal id="loadingReg" style="display: none; text-align: center;">
+		<ons-progress-circular style="height: 200px; width: 200px;" indeterminate></ons-progress-circular>
+	</ons-modal>
+	
+	<div class="input-fields">
+		<p>
+			<ons-input id="regNameInput" float></ons-input>
+		</p>
+		<p>
+			<ons-input id="regCountryInput" data-country-code="" data-phone-code="" readonly="true" float></ons-input>
+		</p>
+		<p>
+			<ons-input id="regPhoneInput" type="number" float></ons-input>
+		</p>
+		<p>
+			<ons-input id="regPasswordInput" type="password" float></ons-input>
+		</p>
+		<p>
+			<ons-input id="regConfirmPasswordInput" type="password" float></ons-input>
+		</p>
+		<p>
+			<ons-button id="btnCompleteRegistration"></ons-button>
+		</p>
+		<p>
+			<ons-button id="btnBackToLogin" modifier="quiet"></ons-button>
+		</p>
+	</div>
+</ons-page>

@@ -1,0 +1,268 @@
+
+/* :: Colors 
+===================================================================================================== :: */
+
+/* :: Backgrounds :: */
+
+.list__item:nth-child(odd), #listFriendRequests .list__item:nth-child(even),
+.search-field, .page__background,
+.chat-window, .profile-avatar,
+.timeline, .newsfeed, .list-store-items .info,
+.price-list .info ul, :checked + .tab-bar--material__button,
+#morePanel, .list-common-items .section,
+.list-unstyled li:nth-child(even) .checkbox,
+.expandable-nav .nav-heading > ul > li:nth-child(even),
+.slick-dots li button {
+	background-color: #f5f5fa;
+}
+
+#pageHome .button--material--flat,
+#pageChat .msgListItem.left .list__item__title,
+/*.company-list dl, .list-store-items dl,*/ .list-common-items .section:nth-child(even), #listFriendRequests .list__item:nth-child(odd),
+.list-shopping-cart #doc-id,
+.company-description .company-profile, .company-list .dtop, .item-description .company-profile .dtop,
+.list-item-images .section .item-cell, /*.list-fav-comp .item-cell dl,*/
+.button--outline:active, .company-store .company-profile .img,
+.bottom-bar textarea:focus,
+.nav-collapse-section .nav-collapse,
+.expandable-nav .toggle.on,
+.list__item:nth-child(even), #pageFavoSiteEditProduct .button-bar__item.current .button-bar__button,
+.cd-section .icon-close, .store-search, .chat-window .section.call .inner,
+.timeline .gallery, .timeline footer, .main-nav li.current,
+.list-store-items .item-graphic .company-meta,
+section.fieldset:nth-child(even),
+.tab-bar--material, .bottom-bar, .button-bar .button-bar__button,
+.ons-tab-bar__footer, .ons-tab-bar__footer .tab-bar__button,
+.navigation-bar--material, .main-items, .list-unstyled .checkbox,
+.product-tab .steps > h4, .item-description .item-info {
+	background-color: white;
+}
+
+.message-notify .list__item__title:before {
+	background-color: #ee2020;
+}
+
+.progress-bar--indeterminate:before, .progress-bar--indeterminate:after,
+.bottom-bar .rec-btn.on, .bottom-bar .rec-btn:active {
+	background-color: #ffcf06 !important;
+}
+
+.tint-bgr-10 {background-color: #eee;}
+
+.cd-section .mini-nav .sub-menu.on > a,
+.tab-bar--material__item:not([ripple]):active,
+.list-store-items dt .icon-delete, .section .icon-delete,
+.store-view-body .edit.edit-item-info,
+.list-shopping-cart .st-doc-sum,
+.side-menu .list__item:before,
+.wall-post-more .wall-post-item .btn-default,
+.fancybox-close-small:after,
+.slick-dots .slick-active button {
+	background-color: #0096d2;
+}
+
+/*#subPageChat .page__background {
+	background-color: #f0f2f5;
+}*/
+
+#pageChat .msgListItem.right .list__item__title,
+#foundFriendField {
+	background-color: #c0e4f7;
+}
+
+/*#morePanel {
+	background-color: #0064b4;
+}*/
+
+.chat-window .section-images .post-img:before {
+	background-color: #003a69;
+}
+
+.price-list .current-plan-txt span {
+	background-color: #0096d2;
+}
+
+.notification {
+	background-color: #fad200;
+}
+
+/*.tab-bar__item.active .tab-bar--material__button {
+	background-color: #e6e6eb;
+}*/
+
+.list-common-items .category-list-item, .expandable-nav .nav-heading > a,
+.side-menu .list__header,
+#pageFavoSiteEditProduct .button-bar__item .button-bar__button, 
+.mp-table-alt tr:nth-child(even) {
+	background-color: #dcdce6;
+}
+
+/* :: Borders :: */
+
+.message-notify .inner-link .left:before, #btnScrollBottom .fab__icon:before {
+	border-color: white;
+}
+
+section.fieldset {
+	border-color: #eee;
+}
+
+#pageChat .msgListItem .list__item__title,
+.company-meta, 
+.list-options .form-group.radio,
+#headerFriendRequests, .app-wrapper .friend-requests-field, .app-wrapper .friends-label,
+.home-profile-element, .chat-window .section.call .inner, .app-wrapper .group-divider,
+.price-list ul li,
+#pageFriendProfile .button-bar__item > .button-bar__button,
+.navigation-bar--material, .tab-bar--material, .ons-tab-bar__footer, .bottom-bar,
+#morePanel, #topMenuFriends, .list-fav-comp .info li {
+	border-color: #dcdce6 !important;
+}
+
+.expandable-nav, .expandable-nav .nav-heading, .cd-section .mini-nav .sub-menu,
+.section .icon-delete,
+.newsfeed .item-content section, .newsfeed .item-content, .main-items .item-content section, .main-items .item-content,
+.price-list .item-content .item-cell {
+	border-color: #ccc;
+}
+
+#pageHome .button--material--flat {
+	border-color: #ffcf06;
+}
+
+#btnLoginLanguage,
+.company-store .company-profile h5, .company-profile address,
+.expandable-nav .nav-heading.on, .cd-section .mini-nav .sub-menu.on,
+.main-nav li,
+.price-list .item-content .current-plan .item-cell,
+.bottom-bar .button--outline,
+.bottom-bar textarea,
+.form-group.qty .btn, .btn.add-cart-item {
+	border-color: #0096d2;
+}
+
+.profile-avatar .ons-icon {
+	border-color: #124092;
+}
+
+.item-list .company-product-list a:hover, .company-list .dtop, .item-description .company-profile .dtop {
+	border-color: #fec014;
+}
+
+/*.navigation-bar--material, .tab-bar--material, .ons-tab-bar__footer, .bottom-bar,
+#morePanel, #topMenuFriends,
+.list-fav-comp .info li {
+	border-color: #dcdce6;
+}*/
+
+/* :: Colors :: */
+
+/*.navigation-bar *:before,*/ .navigation-bar .chat-notification .bell-full:before,
+.chat-window .section-images .post-img:before {
+	color: #ffcf06;
+}
+
+.profile-avatar .ons-icon:before,
+.bottom-bar .rec-btn.on, .bottom-bar .rec-btn:active,
+.list-common-items a,
+#homeProfileName, #pageFavoSiteEditProduct .button-bar__item.current .button-bar__button,
+.price, .price strong {
+	color: #124092;
+}
+
+.notification, .message-notify .list__item__title, .list__item__subtitle {
+	color: #003c78;
+}
+
+.navigation-bar #searchIconClose:before,
+.list-common-items .drop-link.danger-bgr,
+#morePanel, #morePanel .ons-icon:before,
+.timeline .gallery .count,
+.price-list .current-plan-txt, .list-shopping-cart .st-doc-sum,
+.wall-post-more .wall-post-item .btn-default,
+.fancybox-close-small:after {
+	color: white;
+}
+
+.cd-section .mini-nav .inner {
+	color: #ccc;
+}
+
+/*.info .price {
+	color: #d33033;
+}*/
+
+.msg-timestamp, .tabs a,
+.chat-window .section.call .time,
+.timeline header .author {
+	color: #666;
+}
+
+#sideFavoSiteMenu .ion-ios-cart {
+	color: #51d793;
+}
+
+#sideFavoSiteMenu .ion-heart {
+	color: #f75757;
+}
+
+#sideFavoSiteMenu .ion-pricetag {
+	color: #ffdc49;
+}
+
+#sideFavoSiteMenu .ion-ios-list, .tabs .current a,
+.list-favo-items .ons-icon,
+.list__item__title, #favoContent .list__item__center, .home-content .list__item,
+#headerFriendRequests .left .ons-icon, #headerFriendRequests .list-item__subtitle,
+#headerFriendRequests .right .expand-icon, .user-store-link .ons-icon,
+.timeline header h1, .timeline footer a, .newsfeed h1,
+.onsen-dialog .ons-icon,
+.profile-info p,
+.list-store-items dt, .list-store-items dt a,
+.price-list dt, h3,
+.navigation-bar--material__left, .navigation-bar--material__right, .navigation-bar--material__center,
+.tab-bar--material__button, .toolbar-button--material, :checked + .tab-bar--material__button,
+.button-bar .button-bar__button, .back-button--material,
+.bottom-bar .pagination-bar,
+.bottom-bar .button--outline, .bottom-bar .button--outline:active, .tab-bar__item.active .tab-bar--material__button,
+.list-favo-items .list__item__center, .bottom-bar,
+.ons-tab-bar__footer .btn-wrapper,
+h1, h2, h3, h4, h5, h6, #morePanel, #topMenuFriends .list__item__center,
+.item-list dt, .list-shopping-cart label, .form-group.qty .btn,
+.list-fav-comp dt a,
+.chat-side-list-item, #sideMenu .list__item,
+input:checked + .checkbox__checkmark + .label-text,
+.chat-window .section .list-item__icon,
+.side-menu .list__item,
+.sound-rec-img, .btn.add-cart-item {
+	color: #0096d2;
+}
+
+.category-list-item .list__item__title,
+.expandable-nav .nav-heading > a ,
+.side-menu .list__header,
+.product-tab .steps > h4 small {
+	color: #64646e;
+}
+
+.text-input.text-input--material,
+label.list__item__center, .checkbox .label-text,
+.post-date {
+	color: #aaaab4;
+}
+
+#sideFavoSiteMenu .ion-ios-people {
+	color: #8d1597;	
+}
+
+#sideFavoSiteMenu .ion-bag {
+	color: #3da5a0;
+}
+
+#sideFavoSiteMenu .ion-android-share {
+	color: #fe7c00;
+}
+
+.chat-window .section-images.is-multiple .more-images * {
+	color: #003a69;
+}

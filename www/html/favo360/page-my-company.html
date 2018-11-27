@@ -1,0 +1,61 @@
+<ons-page id="pageFavoSiteMyCompany" data-tab-loaded="1">
+
+	<ons-toolbar>
+		<div class="left">
+			<ons-back-button></ons-back-button>
+		</div>
+		<div class="title-label center"></div>
+		<div class="title-loading progress-bar progress-bar--indeterminate">
+			<div class="progress-bar__primary"></div>
+			<div class="progress-bar__secondary"></div>
+		</div>
+	</ons-toolbar>
+	
+	<div class="tab-bar tab-bar--top tab-bar--material">
+		<label class="tab-bar__item tab-bar--material__item">
+			<input id="tabMyCompanyInfo" type="radio" name="tab-bar-material-a" checked="checked" data-tab="1">
+			<button id="labelMyCompanyInfo" class="tab-bar__button tab-bar--material__button"></button>
+		</label>
+		<label class="tab-bar__item tab-bar--material__item">
+			<input id="tabMyCompanyCategories" type="radio" name="tab-bar-material-a" data-tab="2">
+			<button id="labelMyCompanyCategories" class="tab-bar__button tab-bar--material__button"></button>
+		</label>
+	</div>
+	
+	<!-- My Company Info -->
+	<div id="tabCompanyInfo" class="list-common-items">
+		<div class="input-fields">
+			<p>
+				<ons-input id="inputCompanyName" float></ons-input>
+			</p>
+			<p>
+				<ons-input id="inputCompanyCountry" data-country-code="" readonly="true" float></ons-input>
+			</p>
+			<p>
+				<ons-input id="inputCompanyCity" data-city-id="" readonly="true" float></ons-input>
+			</p>
+			<p>
+				<ons-input id="inputCompanyAddress" float></ons-input>
+			</p>
+			<p>
+				<ons-input id="inputCompanyCurrency" readonly="true" float></ons-input>
+			</p>
+			<p>
+				<ons-input id="inputCompanyVAT" float></ons-input>
+			</p>
+		</div>
+
+		<ons-list id="checkboxField"></ons-list>
+	</div>
+	
+	<!-- My Company Categories -->
+	<div id="tabCompanyCategories" class="list-common-items" style="display: none;">
+		<ons-list-header id="labelSelectActivity"></ons-list-header>
+		<ul id="listCompanyInfoCategories" class="ons-sub-cat-list list-unstyled"></ul>							 
+	 </div>
+	
+	<ons-bottom-toolbar> 
+		<ons-button id="btnBottomMyCompanyUpdateInfo" class="button--outline" modifier="quiet" disable-auto-styling></ons-button>
+	</ons-bottom-toolbar>
+	
+</ons-page>

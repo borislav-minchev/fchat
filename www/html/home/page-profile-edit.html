@@ -1,0 +1,36 @@
+<ons-page id="pageProfileEdit">
+
+	<ons-toolbar>
+		<div class="left">
+			<ons-back-button></ons-back-button>
+		</div>
+		<div class="title-label center"></div>
+		<div class="right">
+			<ons-toolbar-button id="btnShowFields" class="on">
+				<ons-icon id="iconPassShow" icon="ion-eye" size="30px"></ons-icon>
+			</ons-toolbar-button>
+		</div>
+		<div class="title-loading progress-bar progress-bar--indeterminate">
+			<div class="progress-bar__primary"></div>
+			<div class="progress-bar__secondary"></div>
+		</div>
+	</ons-toolbar>
+	
+	<div class="input-fields app-inner-space">
+		<p>
+			<ons-input id="inputOldPass" type="password" float></ons-input>
+		</p>
+		<p>
+			<ons-input id="inputNewPass" type="password" float></ons-input>
+		</p>
+		<p>
+			<ons-input id="inputNewPassAgain" type="password" float></ons-input>
+		</p>
+		
+	</div>
+	
+	<ons-bottom-toolbar>
+		<ons-button id="btnSendNewPass" class="button--outline" modifier="quiet" disable-auto-styling></ons-button>
+	</ons-bottom-toolbar>
+	
+</ons-page>

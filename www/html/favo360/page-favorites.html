@@ -1,0 +1,37 @@
+<ons-page id="pageFavoSiteFavorites">
+
+	<ons-toolbar>
+		<div class="left">
+			<ons-back-button></ons-back-button>
+		</div>
+		<div class="title-label center"></div>
+		<div class="right">
+			<ons-toolbar-button style="display: none;" id="btnTitleAddGroup">
+				<i class="app-icon icon-plus">
+					<span class="icon-wrapper"></span>
+				</i>
+			</ons-toolbar-button>
+		</div>
+		<div class="title-loading progress-bar progress-bar--indeterminate">
+			<div class="progress-bar__primary"></div>
+			<div class="progress-bar__secondary"></div>
+		</div>
+	</ons-toolbar>
+	
+	
+	<div class="tab-bar tab-bar--top tab-bar--material">
+		<label class="tab-bar__item tab-bar--material__item">
+			<input id="btnTabFavorites" type="radio" name="tab-bar-material-a" checked="checked" data-tab="1">
+			<button id="btnLabelFavorites" class="tab-bar__button tab-bar--material__button"></button>
+		</label>
+		<label class="tab-bar__item tab-bar--material__item">
+			<input id="btnTabGroups" type="radio" name="tab-bar-material-a" data-tab="2">
+			<button id="btnLabelGroups" class="tab-bar__button tab-bar--material__button"></button>
+		</label>
+	</div>
+
+	<div class="list-fav-comp list-common-items"></div>
+	
+	<div style="display: none;" class="list-groups list-common-items"></div>
+
+</ons-page>

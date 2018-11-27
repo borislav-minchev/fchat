@@ -1,0 +1,26 @@
+<ons-dialog id="dialogChatTaphold" class="onsen-dialog" data-chat-id="" cancelable>
+	<div class="alert-dialog-content">
+		
+		<ons-list-item modifier="longdivider" onclick="homeChatClicks.onDialogTapholdForward()" tappable>
+			<div class="left">
+				<ons-icon icon="ion-android-share" class="list-item__icon"></ons-icon>
+			</div>
+			<div id="labelBtnForward" class="center"></div>
+		</ons-list-item>
+		
+		<ons-list-item id="dialogItemDelete" modifier="longdivider" onclick="homeChatClicks.onDialogTapholdDelete()" tappable>
+			<div class="left">
+				<ons-icon icon="ion-android-delete" class="list-item__icon"></ons-icon>
+			</div>
+			<div id="labelBtnDelete" class="center"></div>
+		</ons-list-item>
+		
+		<ons-list-item id="dialogItemCopy" modifier="longdivider" onclick="homeChatClicks.onDialogTapholdCopy()" tappable>
+			<div class="left">
+				<ons-icon icon="ion-ios-copy" class="list-item__icon"></ons-icon>
+			</div>
+			<div id="labelBtnCopy" class="center"></div>
+		</ons-list-item>
+		
+	</div>
+</ons-dialog>

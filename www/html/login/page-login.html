@@ -1,0 +1,44 @@
+<ons-page id="pageLogin">
+	
+	<ons-modal id="modalLogin" style="display: none; text-align: center;">
+		<ons-progress-circular style="height: 200px; width: 200px;" indeterminate></ons-progress-circular>
+	</ons-modal>
+	
+	<div class="app-logo size-l login-input">
+		<img src="./res/img/logo-app-size-l.png">
+	</div>
+	
+	<ons-fab id="btnLoginLanguage" class="login-input" position="top right">
+		<img id="imgFlag">
+	</ons-fab>
+	
+	<div class="login-info">
+		
+		<div class="login-screen-inputs">
+			<p>
+				<ons-input id="loginCountryCodeInput" class="login-input col-20" data-country-code="" data-country-name=""
+						   data-phone-code="" readonly="true" float>
+				</ons-input>
+				<ons-input id="loginPhoneInput" class="login-input col-75 fR" type="number" float></ons-input>
+			</p>
+			<p>
+				<ons-input id="loginPasswordInput" class="login-input col-100" type="password" float></ons-input>
+			</p>
+		</div>
+		
+		<div class="login-screen-buttons">
+			<p>
+				<ons-button id="btnLogin" class="login-input button button--material"></ons-button>
+				<span class="sep size-m"></span>
+				<ons-button id="btnRegister" class="login-input button button--outline"></ons-button>
+			</p>
+			<p>
+				<ons-button id="btnConfirmSmsCode" style="display: none;" class="login-input button button--outline"></ons-button>
+			</p>
+			<p>
+				<ons-button id="btnForgottenData" class="login-input button button--material--flat"></ons-button>
+			</p>
+		</div>
+		
+	</div>
+</ons-page>

@@ -1,0 +1,185 @@
+<ons-page id="pageFavoSite" data-initialized="0" data-category-code="" data-category-name="" data-country-name="" data-country-code="">
+	
+	<ons-toolbar>
+		<div class="title-label center"></div>
+		<div class="right">
+			<ons-toolbar-button id="btnSearchFavoSite" class="favo-item">
+				<i class="app-icon icon-search">
+					<span class="icon-wrapper"></span>
+				</i>
+			</ons-toolbar-button>
+		</div>
+		<div class="title-loading progress-bar progress-bar--indeterminate">
+			<div class="progress-bar__primary"></div>
+			<div class="progress-bar__secondary"></div>
+		</div>
+	</ons-toolbar>
+	
+	<div class="app-wrapper">
+
+		<div id="favoContent" class="list-favo-items">
+			
+			<div class="text-center favo-join-now" style="display: none;">
+				<ons-button id="btnFavoReg"></ons-button>
+			</div>
+			
+			<ons-list>
+
+				<ons-list-item id="liTimeline" class="favo-item" modifier="longdivider" tappable>
+					<div class="left">
+						<i class="app-icon icon-timeline">
+							<span class="icon-wrapper"></span>
+						</i>
+					</div>
+					<div class="label center"></div>
+				</ons-list-item>
+
+				
+				<!--
+				<ons-list-item id="liProducts" modifier="longdivider" tappable>
+					<div class="left">
+						<i class="app-icon icon-products">
+							<span class="icon-wrapper"></span>
+						</i>
+					</div>
+					<div class="label center"></div>
+				</ons-list-item>
+				-->
+
+
+				<ons-list-item id="liFavorites" class="favo-item" modifier="longdivider" tappable>
+					<div class="left">
+						<i class="app-icon icon-favourites">
+							<span class="icon-wrapper"></span>
+						</i>
+					</div>
+					<div class="label center"></div>
+				</ons-list-item>
+
+				
+				<!--
+				<ons-list-item id="" class="group-divider disabled" disabled="true" modifier="longdivider" tappable>
+					<div class="left">
+						<i class="app-icon icon-stores">
+							<span class="icon-wrapper"></span>
+						</i>
+					</div>
+					<div id="" class="center">Shops &amp; Manufacturers</div>
+				</ons-list-item>
+				
+				
+				
+
+				<ons-list-item id="" class="favo-item group-divider disabled inactive" disabled="true" modifier="longdivider" tappable>
+					<div class="left">
+						<i class="app-icon icon-shipping">
+							<span class="icon-wrapper"></span>
+						</i>
+					</div>
+					<div id="" class="center">Transportation Companies</div>
+				</ons-list-item>
+
+				<ons-list-item id="" class="favo-item disabled inactive" disabled="true" modifier="longdivider" tappable>
+					<div class="left">
+						<i class="app-icon icon-translation-services">
+							<span class="icon-wrapper"></span>
+						</i>
+					</div>
+					<div id="" class="center">Translation services</div>
+				</ons-list-item>
+
+				-->
+
+				<ons-list-item id="liMyCompany" class="favo-item group-divider" modifier="longdivider" tappable>
+					<div class="left">
+						<i class="app-icon icon-my-company">
+							<span class="icon-wrapper"></span>
+						</i>
+					</div>
+					<div class="label center"></div>
+				</ons-list-item>
+
+				<ons-list-item id="liMyStore" class="favo-item" modifier="longdivider" tappable>
+					<div class="left">
+						<i class="app-icon icon-my-store">
+							<span class="icon-wrapper"></span>
+						</i>
+					</div>
+					<div class="label center"></div>
+				</ons-list-item>		
+
+				<ons-list-item id="liOrders" class="favo-item" modifier="longdivider" tappable>
+					<div class="left">
+						<i class="app-icon icon-orders">
+							<span class="icon-wrapper"></span>
+							<span class="notification"></span>
+						</i>
+					</div>
+					<div class="label center"></div>
+				</ons-list-item>
+
+				<ons-list-item id="liDeliveries" class="favo-item" modifier="longdivider" tappable>
+					<div class="left">
+						<i class="app-icon icon-deliveries">
+							<span class="icon-wrapper"></span>
+						</i>
+					</div>
+					<div class="label center"></div>
+				</ons-list-item>
+
+				<ons-list-item id="liStatistics" class="favo-item" modifier="longdivider" tappable>
+					<div class="left">
+						<i class="app-icon icon-statistics">
+							<span class="icon-wrapper"></span>
+						</i>
+					</div>
+					<div class="label center"></div>
+				</ons-list-item>
+
+				<ons-list-item id="liCart" class="favo-item group-divider" modifier="longdivider" tappable>
+					<div class="left">
+						<i class="app-icon icon-cart">
+							<span class="icon-wrapper"></span>
+							<span class="notification"></span>
+						</i>
+					</div>
+					<div class="label center"></div>
+				</ons-list-item>
+
+				<ons-list-item id="liPayment" class="favo-item" modifier="longdivider" tappable>
+					<div class="left">
+						<i class="app-icon icon-payment">
+							<span class="icon-wrapper"></span>
+						</i>
+					</div>
+					<div class="label center"></div>
+				</ons-list-item>
+				
+				<!--
+
+				<ons-list-item id="liPrices" class="favo-item" modifier="longdivider" tappable>
+					<div class="left">
+						<i class="app-icon icon-prices">
+							<span class="icon-wrapper"></span>
+						</i>
+					</div>
+					<div class="label center"></div>
+				</ons-list-item>
+
+				
+
+				<ons-list-item id="" class="favo-item disabled inactive" disabled="true" modifier="longdivider" tappable>
+					<div class="left">
+						<i class="app-icon icon-help">
+							<span class="icon-wrapper"></span>
+						</i>
+					</div>
+					<div id="" class="center">Help</div>
+				</ons-list-item>
+-->
+
+			</ons-list>
+		</div>
+	</div>
+	
+</ons-page>

@@ -1,0 +1,85 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "com.ionic.keyboard": {
+            "PACKAGE_NAME": "com.favo360.chat"
+        },
+        "com.synconset.imagepicker": {
+            "PACKAGE_NAME": "com.favo360.chat"
+        },
+        "com.verso.cordova.clipboard": {
+            "PACKAGE_NAME": "com.favo360.chat"
+        },
+        "cordova-custom-config": {
+            "PACKAGE_NAME": "com.favo360.chat"
+        },
+        "cordova-plugin-android-permissions": {
+            "PACKAGE_NAME": "com.favo360.chat"
+        },
+        "cordova-plugin-camera": {
+            "PACKAGE_NAME": "com.favo360.chat"
+        },
+        "cordova-plugin-contacts": {
+            "PACKAGE_NAME": "com.favo360.chat"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.favo360.chat"
+        },
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "com.favo360.chat"
+        },
+        "cordova-plugin-file-transfer": {
+            "PACKAGE_NAME": "com.favo360.chat"
+        },
+        "cordova-plugin-firebase": {
+            "PACKAGE_NAME": "com.favo360.chat"
+        },
+        "cordova-plugin-globalization": {
+            "PACKAGE_NAME": "com.favo360.chat"
+        },
+        "cordova-plugin-inappbrowser": {
+            "PACKAGE_NAME": "com.favo360.chat"
+        },
+        "cordova-plugin-media": {
+            "PACKAGE_NAME": "com.favo360.chat"
+        },
+        "cordova-plugin-media-capture": {
+            "PACKAGE_NAME": "com.favo360.chat"
+        },
+        "cordova-plugin-network-information": {
+            "PACKAGE_NAME": "com.favo360.chat"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "com.favo360.chat"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "com.favo360.chat"
+        },
+        "cordova-plugin-vibration": {
+            "PACKAGE_NAME": "com.favo360.chat"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.favo360.chat"
+        },
+        "in.edelworks.sharedpreferences": {
+            "PACKAGE_NAME": "com.favo360.chat"
+        },
+        "nl.x-services.plugins.toast": {
+            "PACKAGE_NAME": "com.favo360.chat"
+        }
+    },
+    "dependent_plugins": {
+        "com.guinatal.refreshgallery": {
+            "PACKAGE_NAME": "com.favo360.chat"
+        },
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "com.favo360.chat"
+        }
+    }
+}

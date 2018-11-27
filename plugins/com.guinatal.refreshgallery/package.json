@@ -1,0 +1,88 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "https://github.com/lotterfriends/refreshgallery",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "https://github.com/lotterfriends/refreshgallery",
+        "spec": "git+https://github.com/lotterfriends/refreshgallery.git",
+        "type": "hosted",
+        "hosted": {
+          "type": "github",
+          "ssh": "git@github.com:lotterfriends/refreshgallery.git",
+          "sshUrl": "git+ssh://git@github.com/lotterfriends/refreshgallery.git",
+          "httpsUrl": "git+https://github.com/lotterfriends/refreshgallery.git",
+          "gitUrl": "git://github.com/lotterfriends/refreshgallery.git",
+          "shortcut": "github:lotterfriends/refreshgallery",
+          "directUrl": "https://raw.githubusercontent.com/lotterfriends/refreshgallery/master/package.json"
+        }
+      },
+      "D:\\DEV\\FavoChat\\node_modules"
+    ]
+  ],
+  "_from": "git+https://github.com/lotterfriends/refreshgallery.git#d15bbe3eb790636eb976f6e3666f7d7da75bcfbb",
+  "_id": "cordova-plugin-refresh-gallery@1.0.9",
+  "_inCache": true,
+  "_location": "/cordova-plugin-refresh-gallery",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "https://github.com/lotterfriends/refreshgallery",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "https://github.com/lotterfriends/refreshgallery",
+    "spec": "git+https://github.com/lotterfriends/refreshgallery.git",
+    "type": "hosted",
+    "hosted": {
+      "type": "github",
+      "ssh": "git@github.com:lotterfriends/refreshgallery.git",
+      "sshUrl": "git+ssh://git@github.com/lotterfriends/refreshgallery.git",
+      "httpsUrl": "git+https://github.com/lotterfriends/refreshgallery.git",
+      "gitUrl": "git://github.com/lotterfriends/refreshgallery.git",
+      "shortcut": "github:lotterfriends/refreshgallery",
+      "directUrl": "https://raw.githubusercontent.com/lotterfriends/refreshgallery/master/package.json"
+    }
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "git+https://github.com/lotterfriends/refreshgallery.git#d15bbe3eb790636eb976f6e3666f7d7da75bcfbb",
+  "_shasum": "5102f1289580ac968ef1d408e0d1c2c9ca550705",
+  "_shrinkwrap": null,
+  "_spec": "https://github.com/lotterfriends/refreshgallery",
+  "_where": "D:\\DEV\\FavoChat\\node_modules",
+  "author": {
+    "name": "Guilherme Natal de Mello"
+  },
+  "bugs": {
+    "url": "https://github.com/lotterfriends/refreshgallery/issues"
+  },
+  "dependencies": {},
+  "description": "Update the gallery when saving a picture on android",
+  "devDependencies": {},
+  "gitHead": "d15bbe3eb790636eb976f6e3666f7d7da75bcfbb",
+  "homepage": "https://github.com/lotterfriends/refreshgallery#readme",
+  "keywords": [
+    "cordova",
+    "android",
+    "gallery",
+    "refresh"
+  ],
+  "license": "Apache-2.0",
+  "main": "index.js",
+  "name": "cordova-plugin-refresh-gallery",
+  "optionalDependencies": {},
+  "readme": "# Phonegap Plugin Refresh Gallery\r\n\r\nI've created this plugin because when you save an image on android device, this image does not appears on gallery. This plugin updates the image gallery.\r\n\r\n## Usage\r\n\r\nYou just need to include the following line in the config.xml\r\n\r\n```xml\r\n<gap:plugin name=\"cordova-plugin-refresh-gallery\" version=\"1.0.9\" source=\"npm\"/>\r\n```\r\n\r\nAfter that, you invoke the method to refresh the image gallery.\r\n\r\n```javascript\r\nrefreshMedia.refresh(path);\r\n```\r\n\r\n## Full Example\r\n\r\n```javascript\r\nwindow.requestFileSystem(LocalFileSystem.PERSISTENT, 0, function (fileSystem) {\r\n\r\n  var fileTransfer = new FileTransfer();\r\n  var uri = encodeURI(\"http://www.example.com/image\");\r\n  var path = fileSystem.root.toURL() + \"appName/example.jpg\";\r\n\r\n  fileTransfer.download(\r\n    uri,\r\n    path,\r\n    function(entry) {\r\n      refreshMedia.refresh(path); // Refresh the image gallery\r\n    },\r\n    function(error) {\r\n      console.log(error.source);\r\n      console.log(error.target);\r\n      console.log(error.code);\r\n    },\r\n    false,\r\n    {\r\n      headers: {\r\n        \"Authorization\": \"dGVzdHVzZXJuYW1lOnRlc3RwYXNzd29yZA==\"\r\n      }\r\n    }\r\n  );\r\n\r\n});\r\n```\r\n\r\n![Album](http://blog.guinatal.com/wp-content/uploads/2015/04/album.jpg)\r\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lotterfriends/refreshgallery.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.0.9"
+}

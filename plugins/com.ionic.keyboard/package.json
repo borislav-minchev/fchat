@@ -1,0 +1,24 @@
+{
+  "name": "ionic-plugin-keyboard",
+  "version": "2.0.1",
+  "cordova": {
+    "id": "ionic-plugin-keyboard",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "description": "Ionic Keyboard Plugin",
+  "repository": "https://github.com/driftyco/ionic-plugin-keyboard.git",
+  "issue": "https://github.com/driftyco/ionic-plugin-keyboard/issues",
+  "keywords": [
+    "ionic",
+    "cordova",
+    "keyboard",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios"
+  ],
+  "author": "Ionic",
+  "license": "Apache 2.0"
+}

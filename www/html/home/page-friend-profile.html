@@ -1,0 +1,79 @@
+<ons-page id="pageFriendProfile" data-user-id="" data-con-id="">
+	
+	<ons-toolbar>
+		<div class="left">
+			<ons-back-button></ons-back-button>
+		</div>
+		<div class="title-label center"></div>
+		<div class="right">
+			<ons-toolbar-button id="btnTitleFriendMore" class="friend-profile-button">
+				<ons-icon icon="ion-android-more-vertical"></ons-icon>
+			</ons-toolbar-button>
+		</div>
+		<div class="title-loading progress-bar progress-bar--indeterminate">
+			<div class="progress-bar__primary"></div>
+			<div class="progress-bar__secondary"></div>
+		</div>
+	</ons-toolbar>
+	
+	<p class="profile-avatar">
+		<img id="friendAvatar" src="./res/img/avatar-placeholder.png">
+	</p>
+	
+	
+	<!-- Middle Tab Bar -->
+	<div class="button-bar">
+		
+		<!-- class="only-child" -->
+		<div id="barItemOpenChat" class="only-child button-bar__item">
+			<div id="btnOpenChat" class="button-bar__button">
+				<i class="app-icon icon-chat">
+					<span class="icon-wrapper"></span>
+				</i>
+			</div>
+		</div>
+
+		<div id="barItemCallFriend" class="button-bar__item" style="display: none;">
+			<div id="btnCallFriend" class="button-bar__button">
+				<ons-icon icon="ion-android-call"></ons-icon>
+			</div>
+		</div>
+
+		<div id="barItemUserCompany" class="button-bar__item" style="display: none;">
+			<div id="btnUserCompany" class="button-bar__button" data-comp-id="">
+				<i class="app-icon icon-store-link">
+					<span class="icon-wrapper"></span>
+				</i>
+			</div>
+		</div>
+	</div>
+		
+	<div class="buttons-field">
+		<ons-button id="btnSendFriendRequest" class="friend-profile-button" style="display: none;"></ons-button>
+		<ons-button id="btnAcceptFriendRequest" class="friend-profile-button" style="display: none;"></ons-button>
+		<ons-button id="btnDenyFriendRequest" class="friend-profile-button" style="display: none;"></ons-button>
+		<ons-button id="btnCancelFriendRequest" class="friend-profile-button" style="display: none;"></ons-button>
+	</div>
+	
+	<div class="profile-info">
+		<p>
+			<span id="labelFriendFullName"></span>
+			<span id="friendFullName"></span>
+		</p>
+		<p>
+			<ons-input id="friendCustomName" modifier="underbar" float></ons-input>
+		</p>
+		<p>
+			<ons-input id="friendComment" modifier="underbar" float></ons-input>
+		</p>
+		<p>
+			<span id="labelFriendCountry"></span>
+			<span id="friendCountry" data-country-code=""></span>
+		</p>
+	</div>
+	
+	<ons-bottom-toolbar id="botToolbarFriendProfile" style="display: none;"> 
+		<ons-button id="btnUpdateFriendProfile" class="button--outline" modifier="quiet" disable-auto-styling></ons-button>
+	</ons-bottom-toolbar>
+	
+</ons-page>

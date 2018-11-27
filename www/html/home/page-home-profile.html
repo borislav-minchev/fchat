@@ -1,0 +1,54 @@
+<ons-page id="pageHomeProfile" data-initialized="0">
+	
+	<ons-toolbar>
+		<div class="title-label center"></div>
+	</ons-toolbar>
+
+	<div class="app-wrapper">
+		
+		<div class="home-profile-element">
+			<ons-list-item id="btnHomeProfile" modifier="longdivider" tappable>
+				<div class="inner-link">
+					<div class="left">
+						<img id="homeProfileImg" class="list__item__thumbnail">
+					</div>
+					<div class="center">
+						<span id="homeProfileName" class="list__item__title"></span>
+						<span class="list__item__subtitle"></span>
+					</div>
+				</div>
+				<div id="btnProfileQR" class="user-store-link" data-img-src="">
+					<i class="app-icon icon-qr-code">
+						<span class="icon-wrapper"></span>
+					</i>
+				</div>
+			</ons-list-item>
+		</div>
+
+		<ons-list class="home-content">
+
+			<ons-list-item id="btnHomeSettings" modifier="longdivider" tappable>
+				<div class="left">
+					<ons-icon icon="ion-ios-gear-outline"></ons-icon>
+				</div>
+				<div class="center">
+					<span id="labelSettings" class="list-item__title"></span>
+				</div>
+			</ons-list-item>
+
+			<ons-list-item id="btnHomeSupport" modifier="longdivider" tappable>
+				<div class="left">
+					<i class="app-icon icon-favo-chat">
+						<span class="icon-wrapper"></span>
+					</i>
+				</div>
+				<div class="center">
+					<span id="labelSupport" class="list-item__title"></span>
+				</div>
+			</ons-list-item>
+
+		</ons-list>
+		
+		<ons-list-header id="headerAppVersion">Version 1.6.6</ons-list-header>
+	</div>
+</ons-page>

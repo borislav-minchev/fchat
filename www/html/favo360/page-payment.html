@@ -1,0 +1,45 @@
+<ons-page id="pageFavoSitePayment">
+	
+	<ons-toolbar>
+		<div class="left">
+			<ons-back-button></ons-back-button>
+		</div>
+		<div class="title-label center"></div>
+		<div class="title-loading progress-bar progress-bar--indeterminate">
+			<div class="progress-bar__primary"></div>
+			<div class="progress-bar__secondary"></div>
+		</div>
+	</ons-toolbar>
+	
+	<div class="input-fields">
+		<section class="fieldset">
+        	<h3 id="labelWireTransfer"></h3>
+            <p>
+                <ons-input id="inputBankName" float></ons-input>
+            </p>
+            <p>
+                <ons-input id="inputIBAN" placeholder="IBAN" float></ons-input>
+            </p>
+            <p>
+                <ons-input id="inputBIC" placeholder="BIC" float></ons-input>
+            </p>
+         </section>
+         <section class="fieldset">
+         	<h3><img id="imgPayPal"></h3>
+            <p>
+                <ons-input id="inputPayPal" placeholder="PayPal" float></ons-input>
+            </p>
+         </section>
+         <section class="fieldset">
+         	<h3><img id="imgAliPay"></h3>
+            <p>
+                <ons-input id="inputAliPay" placeholder="AliPay" float></ons-input>
+            </p>
+         </section>
+	</div>
+	
+	<ons-bottom-toolbar> 
+		<ons-button id="btnBottomSavePaymentMethod" class="button--outline" modifier="quiet" disable-auto-styling></ons-button>
+	</ons-bottom-toolbar>
+	
+</ons-page>
